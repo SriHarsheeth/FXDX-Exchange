@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.component3-main-container {
+    width: 1512px;
+    height: 464px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+.component3-main-container .left .container {
+    width: 100%;
+    height: 350px;
+    border: solid 2px #0267FF;
+    border-radius: 36px;
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+.component3-main-container .left .containeress {
+    border: 2px solid blue;
+    background-color: black;
+    border-radius: 36px;
+    display: none;
+}
+
+
+table {
+    margin: 20px auto;
+    text-align: center;
+    font: 20px;
+    width: 100%;
+    border: 1px hidden;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 35px 3px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 70%;
+}
+
+td {
+    padding: 18px 5px;
+    font-size: 20.673px;
+    font-weight: 500;
+}
+
+td button {
+    border-radius: 62px;
+    background-color: #0267FF;
+    border: 1px solid #0267FF;
+    padding: 10px, 28px, 10px, 28px;
+    width: 80px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 400;
+}
+
+.component3-main-container .right {
+    width: 350px;
+    margin-top: 115px;
+}
+
+.component3-main-container .right h1 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.component3-main-container .right p {
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 70%;
+}
+
+.component3-main-container .right button {
+    width: 212px;
+    height: 54px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 15px, 40px, 15px, 40px;
+    background-color: #0267FF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media(max-width:769px) {
+    .component3-main-container {
+        width: 768px;
+        height: 680px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .component3-main-container .left.containeress {
+        display: none;
+    }
+
+    .component3-main-container .left .container {
+        margin-top: 280px;
+    }
+
+    .component3-main-container .right {
+        margin-top: 25px;
+        width: 400px;
+        margin-bottom: 260px;
+    }
+}
+
+@media (max-width:376px) {
+    .component3-main-container {
+        width: 375px;
+        height: 680px;
+    }
+
+    .component3-main-container .container {
+        display: none;
+    }
+
+    .component3-main-container .left {
+        margin-top: 90px;
+    }
+
+    td {
+        padding: 5px 1px;
+    }
+
+    .component3-main-container .left .containeress {
+        margin-top: 60px;
+        display: inherit;
+        width: 330px;
+        height: 300px;
+        margin-right: 22px;
+    }
+
+    .component3-main-container .right {
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 340px;
+    }
+}
